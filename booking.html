@@ -21,12 +21,34 @@
         width: 50%;
       }
 
+      .promoImage {
+        max-width: 200px;
+        display: block;
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin: auto;
+        width: 100%;
+      }
+
       .dropdown {
         display: flex;
       }
 
       .btn {
         margin: 0 auto;
+      }
+
+      .body-container {
+        margin: auto;
+        width: 80%;
+      }
+
+      .footer {
+        /* position: fixed; */  /*position only for short pages with no scroll */
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
       }
 
       h1 {
@@ -49,49 +71,28 @@
         font-style: italic;
       }
 
-      ul {
-        text-align: Center;
-        list-style-type: none;
-      }
-
-      #menu {
-        text-align: Center;
-        list-style-type: none;
-        font-size: 1.1rem;
-      }
-
-      #shows {
-        list-style-type: none;
-        font-size: 1rem;
-      }
-
-      .video-container {
-        margin: auto;
-        width: 100%;
-        border: none;
-      }
-
-      .shows-container {
-        margin: auto;
-        width: 90%;
-        border: none;
-      }
-
-      .body-container {
-        margin: auto;
-        width: 80%;
-      }
-
-      .footer {
-        /* position: fixed; */  /*position only for short pages with no scroll */
-        left: 0;
-        bottom: 0;
-        width: 100%;
+      .centeredListLeftAlign {
         text-align: center;
       }
 
+      ul {
+        display: inline-block;
+        text-align: left;
+        list-style: none;
+      }
+
+      #menu {
+        display: inline-block;
+        text-align: center;
+        list-style: none;
+      }
+
+      #menu li {
+        margin: 10px
+      }
+
       @media only screen and (max-width: 600px) {
-        .body-container, .shows-container {
+        .body-container, .shows-container, .col {
           margin: auto;
           width: 100%;
         }
@@ -130,35 +131,37 @@
       <p>
         I greatly appreciate your interest in having me play for your event! This pages is set up to answer most questions you may have about my music and background. Scroll down for more info, or simply click a link below:
       </p>
-      <ul id="menu">
-        <li>
-          <a href="#contact">How can I contact you?</a>
-        </li>
-        <li>
-          <a href="#music">Do you have any music samples?</a>
-        </li>
-        <li>
-          <a href="#live">What are your live performances like?</a>
-        </li>
-        <li>
-          <a href="#social">Where can I find you on social media?</a>
-        </li>
-        <li>
-          <a href="#availability">When are you available to play?</a>
-        </li>
-        <li>
-          <a href="#bio">Can you explain your style/music/history? (bio)</a>
-        </li>
-        <li>
-          <a href="#photos">Do you have any photos or posters for promotion?</a>
-        </li>
-        <!-- <li>
-          What other services do you offer?
-        </li> -->
-        <li>
-          <a href="#updates">How can I stay updated with your music and performances?</a>
-        </li>
-      </ul>
+      <div class="centeredListLeftAlign">
+        <ul id="menu">
+          <li>
+            <a href="#contact">How can I contact you?</a>
+          </li>
+          <li>
+            <a href="#music">Do you have any music samples?</a>
+          </li>
+          <li>
+            <a href="#live">What are your live performances like?</a>
+          </li>
+          <li>
+            <a href="#social">Where can I find you on social media?</a>
+          </li>
+          <li>
+            <a href="#availability">When are you available to play?</a>
+          </li>
+          <li>
+            <a href="#bio">Can you explain your style/music/history? (bio)</a>
+          </li>
+          <li>
+            <a href="#photos">Do you have any photos or posters for promotion?</a>
+          </li>
+          <!-- <li>
+            What other services do you offer?
+          </li> -->
+          <li>
+            <a href="#updates">How can I stay updated with your music and performances?</a>
+          </li>
+        </ul>
+      </div>
 
       <h2 id="contact">
         How can I contact you?
@@ -177,13 +180,15 @@
       <p>
         Of course! Check out my album, The KL EP:
       </p>
-      <ul>
-        <li><a href="music/1_Mistake-Troubled Lives.mp3" target="_blank">Mistake/Troubled Lives</a></li>
-        <li><a href="music/2_Settle Down.mp3" target="_blank">Settle Down</a></li>
-        <li><a href="music/3_Bloody Noses and Balloons.mp3" target="_blank">Bloody Noses and Balloons</a></li>
-        <li><a href="music/4_Who Are You.mp3" target="_blank">Who Are You</a></li>
-        <li><a href="music/5_I Don't Know How.mp3" target="_blank">I Don't Know How</a></li>
-      </ul>
+      <div class="centeredListLeftAlign">
+        <ul>
+          <li><a href="music/1_Mistake-Troubled Lives.mp3" target="_blank">Mistake/Troubled Lives</a></li>
+          <li><a href="music/2_Settle Down.mp3" target="_blank">Settle Down</a></li>
+          <li><a href="music/3_Bloody Noses and Balloons.mp3" target="_blank">Bloody Noses and Balloons</a></li>
+          <li><a href="music/4_Who Are You.mp3" target="_blank">Who Are You</a></li>
+          <li><a href="music/5_I Don't Know How.mp3" target="_blank">I Don't Know How</a></li>
+        </ul>
+      </div>
       <p>
         <q>
           You are brilliant, and I’m not just saying it! I adore your tone! So smooth, suits the song fully! I am your fan now, I will be back more than gladly! Honestly impressive!
@@ -228,7 +233,7 @@
       <p>
         Any bookings <b>outside</b> of these dates/times are available:
       </p>
-      <div class="shows-container">
+      <div class="centeredListLeftAlign">
         <ul id="shows">
           <li>April 1 Fri | 7-9pm | Conversion Brewing</li>
           <li>April 2 Sat | Private Event</li>
@@ -290,16 +295,22 @@
       <p>
         Click on an image below to see it full-sized
       </p>
-      <div class="thumbnails">
-        <a target="_blank" href="images/dylan-santiago-music.png">
-          <img src="images/dylan-santiago-music.png" alt="Picture of Dylan Santiago" class="img-thumbnail">
-        </a>
-        <a target="_blank" href="images/Dylan-Santiago-Poster-11x17.png">
-          <img src="images/Dylan-Santiago-Poster-11x17.png" alt="11x17 inch poster for Dylan Santiago" class="img-thumbnail">
-        </a>
-        <a target="_blank" href="images/Example-Instagram-Promo.png">
-          <img src="images/Example-Instagram-Promo.png" alt="Example of an Instagram promotion post for Dylan Santiago" class="img-thumbnail">
-        </a>
+      <div class="thumbnails row">
+        <div class="col">
+          <a target="_blank" href="images/dylan-santiago-music.png">
+            <img src="images/dylan-santiago-music.png" alt="Picture of Dylan Santiago" class="promoImage">
+          </a>
+        </div>
+        <div class="col">
+          <a target="_blank" href="images/Dylan-Santiago-Poster-11x17.png">
+            <img src="images/Dylan-Santiago-Poster-11x17.png" alt="11x17 inch poster for Dylan Santiago" class="promoImage">
+          </a>
+        </div>
+        <div class="col">
+          <a target="_blank" href="images/Example-Instagram-Promo.png">
+            <img src="images/Example-Instagram-Promo.png" alt="Example of an Instagram promotion post for Dylan Santiago" class="promoImage">
+          </a>
+        </div>
       </div>
       <p>
         I'll provide a customized social media poster for your event!
@@ -331,3 +342,4 @@
 
   </body>
 </html>
+
