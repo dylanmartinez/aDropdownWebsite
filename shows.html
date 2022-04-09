@@ -52,10 +52,16 @@
         font-size: 1.1rem;
       }
 
-      ul {
-        text-align: Center;
-        list-style-type: none;
+      .centeredListLeftAlign {
+        text-align: center;
       }
+
+      ul {
+        display: inline-block;
+        text-align: left;
+        list-style: none;
+      }
+
 
 
       @media only screen and (max-width: 600px) {
@@ -88,17 +94,19 @@
     <div class="body-container">
       <h1>Shows</h1>
       <p>Wanna see me play live? Here's my list of shows for this month:</p>
-      <ul>
-        <li>April 1 Fri | 7-9pm | Conversion Brewing</li>
-        <li>April 2 Sat | Private Event</li>
-        <li>April 4 Mon | Private Event</li>
-        <li>April 7 Thurs | 6-9pm | Deep Space Brewing</li>
-        <li>April 9 Sat | 6-8:30pm | 503 Uncorked</li>
-        <li>April 13 Wed | 6-9pm | Shades of Brew</li>
-        <li>April 14 Thurs | 7-10pm | Oregon Gardens Fireside Lounge</li>
-        <li>April 22 Fri | 6-8pm | Wayward Sandwiches</li>
-        <li>April 30 Sat | 3-5pm | Coria Estates</li>
-      </ul>
+      <div class="centeredListLeftAlign">
+        <ul>
+          <li>April 1 Fri | 7-9pm | Conversion Brewing</li>
+          <li>April 2 Sat | Private Event</li>
+          <li>April 4 Mon | Private Event</li>
+          <li>April 7 Thurs | 6-9pm | Deep Space Brewing</li>
+          <li>April 9 Sat | 6-8:30pm | 503 Uncorked</li>
+          <li>April 13 Wed | 6-9pm | Shades of Brew</li>
+          <li>April 14 Thurs | 7-10pm | Oregon Gardens Fireside Lounge</li>
+          <li>April 22 Fri | 6-8pm | Wayward Sandwiches</li>
+          <li>April 30 Sat | 3-5pm | Coria Estates</li>
+        </ul>
+      </div>
       <p>Please feel free to get the word out, invite your friends, and most of all, have fun!</p>
     </div>
 
@@ -112,3 +120,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
+
