@@ -1,0 +1,137 @@
+
+body {
+    background-color: #202124;
+    color: white;
+  }
+
+.header-img {
+    max-width: 250px;
+    max-height: auto;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+a .img-thumbnail {
+    background-color: #202124;
+    border: none;
+  }
+
+a {
+    color: lightblue;
+  }
+
+.dropdown {
+    display: flex;
+  }
+
+.btn {
+    margin: 0 auto;
+  }
+
+.body-container {
+    margin: auto;
+    width: 80%;
+  }
+
+.footer {
+    /* position: fixed; */  /*position only for short pages with no scroll */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+h1 {
+    text-align: Center;
+    margin: 50px;
+  }
+
+h2 {
+    text-align: Center;
+    margin: 40px;
+  }
+
+p {
+    text-align: Center;
+    margin: 30px;
+    font-size: 1.2rem;
+  }
+
+q {
+    font-style: italic;
+  }
+
+.centeredListLeftAlign {
+    text-align: center;
+  }
+
+.show-list li {
+    font-size: 1rem;
+  }
+
+ul {
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+  }
+
+
+li {
+    font-size: 1.2rem;
+  }
+
+.centered-img {
+    max-width: 500px;
+    max-height: auto;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.promoImage {
+    max-width: 150px;
+    max-height: auto;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.social-links p {
+    font-size: 2rem;
+  }
+
+.signup-link p {
+    font-size: 2rem;
+  }
+
+.donate-links p {
+    font-size: 2rem;
+  }
+
+.music-links p {
+    font-size: 2rem;
+}
+
+#menu {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+  }
+
+#menu li {
+    margin: 10px
+  }
+
+@media only screen and (max-width: 600px) {
+    .body-container, .shows-container, .col {
+      margin: auto;
+      width: 100%;
+    }
+}
